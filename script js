@@ -7,7 +7,7 @@ function registerUser() {
         localStorage.setItem("username", username);
         localStorage.setItem("password", password);
         alert("Registration Successful! Redirecting to login...");
-        window.location.href = "login.html";
+        window.location.href = "./login.html";  // ✅ works better on GitHub Pages
     } else {
         alert("Please fill all fields!");
     }
@@ -23,7 +23,7 @@ function loginUser() {
 
     if(username === storedUser && password === storedPass){
         alert("Login Successful! Redirecting to portfolio...");
-        window.location.href = "portfolio.html";
+        window.location.href = "./portfolio.html";  // ✅ works better on GitHub Pages
     } else {
         alert("Invalid Credentials!");
     }
