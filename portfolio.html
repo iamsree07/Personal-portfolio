@@ -12,12 +12,13 @@
       padding: 0;
       background: #f4f6f9;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
       background: linear-gradient(135deg, #4CAF50, #2e7d32);
       color: white;
-      padding: 30px 20px;
+      padding: 30px 20px 20px;
       text-align: center;
       position: relative;
     }
@@ -60,6 +61,28 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
+    /* Navigation bar */
+    nav {
+      background: #388e3c;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #2e7d32;
+    }
+
     section {
       padding: 20px;
       margin: 15px auto;
@@ -100,6 +123,11 @@
       header h1 {
         font-size: 1.6rem;
       }
+      nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 0.9rem;
+      }
       section {
         padding: 15px;
         margin: 10px;
@@ -124,12 +152,21 @@
     </div>
   </header>
 
-  <section>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#interests">Interests</a>
+    <a href="#career">Career Aim</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>Hello! I am <strong>Sree</strong>, a passionate learner interested in technology and innovation.</p>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
     <ul>
       <li>BCA in Cyber Security – Hindustan Institute of Technology and Science</li>
@@ -137,17 +174,17 @@
     </ul>
   </section>
 
-  <section>
+  <section id="interests">
     <h2>Interests</h2>
     <p>I enjoy coding, learning new technologies, solving problems, and exploring cybersecurity topics.</p>
   </section>
 
-  <section>
+  <section id="career">
     <h2>Career Aim</h2>
     <p>My aim is to become a <strong>Cyber Security Specialist</strong> and contribute to building secure systems and networks.</p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact Information</h2>
     <p><strong>Email:</strong> sree76939@gmail.com</p>
     <p><strong>Phone:</strong> 8122118593</p>
